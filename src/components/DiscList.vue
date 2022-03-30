@@ -1,5 +1,6 @@
 <template>
   <div class="row row-cols-5 justify-content-center">
+    <MyLoader v-if="discList.length === 0" />
     <DiscCard v-for="(disc, index) in discList" :key="index" :disc="disc" />
   </div>
 </template>
@@ -7,9 +8,10 @@
 <script>
 import axios from "axios";
 import DiscCard from "./DiscCard.vue";
+import MyLoader from "./MyLoader.vue";
 export default {
   name: "DiscList",
-  components: { DiscCard },
+  components: { DiscCard, MyLoader },
   data: () => ({
     discList: [],
   }),

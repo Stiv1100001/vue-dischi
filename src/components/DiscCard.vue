@@ -1,5 +1,5 @@
 <template>
-  <div id="card" class="col pt-3 text-center">
+  <div id="card" class="col pt-3 text-center mb-3">
     <img :src="disc.poster" :alt="disc.title" class="img-fluid mb-3" />
     <h5 class="text-white mb-5">{{ disc.title }}</h5>
     <h6>{{ disc.author }}</h6>
@@ -19,12 +19,8 @@ export default {
 <style lang="scss" scoped>
 #card {
   background-color: rgb(46, 58, 70);
-  // width: calc(100% / 5);
-
-  img {
-    // height: 50%;
-    object-fit: cover;
-  }
+  width: calc(100% / 5 - 20px);
+  margin-right: 20px;
 
   h6 {
     color: #7c7f80;

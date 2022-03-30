@@ -30,7 +30,7 @@ header {
 }
 
 main {
+  min-height: 93vh;
   background-color: rgb(30, 45, 59);
-  height: 93vh;
 }
 </style>

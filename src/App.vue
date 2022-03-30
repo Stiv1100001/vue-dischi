@@ -1,28 +1,36 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <header class="vw-100 d-flex p-2">
+      <img
+        src="https://grafica-facile.com/wp-content/uploads/2022/01/spotify-logo.png"
+        alt="Spotify logo"
+        class="img-fluid"
+      />
+    </header>
+    <main class="vw-100 overflow-auto">
+      <div class="container pt-5">
+        <DiscList />
+      </div>
+    </main>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import DiscList from "@/components/DiscList.vue";
 export default {
   name: "App",
-  components: {
-    HelloWorld,
-  },
+  components: { DiscList },
 };
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+header {
+  height: 7vh;
+  background-color: rgb(42, 52, 61);
+}
+
+main {
+  background-color: rgb(30, 45, 59);
+  height: 93vh;
 }
 </style>

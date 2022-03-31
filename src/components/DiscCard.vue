@@ -19,8 +19,8 @@ export default {
 <style lang="scss" scoped>
 #card {
   background-color: rgb(46, 58, 70);
-  width: calc(100% / 5 - 20px);
-  margin-right: 20px;
+  width: calc(100% / 5 - 10px);
+  margin-right: 10px;
 
   h6 {
     color: #7c7f80;
